@@ -71,27 +71,6 @@ The bar chart above clearly illustrates the superior performance of the perplexi
 
 The line chart shows that the combined detector maintains consistently high accuracy across all samples, confirming its robustness. Advanced methods like Perplexity-Based and DeBERTa detectors stabilize at high accuracy levels early on, whereas simpler methods plateau at much lower accuracy levels.
 
-## 🚀 Running the Experiments
-
-### Files in `src/` Folder
-
-- **attacks.py**: Contains the implementation of various detection methods.
-- **evaluation.py**: Evaluation script for testing the effectiveness of detectors.
-- **helpers.py**: Helper functions used throughout the codebase.
-- **run_combined.py**: Script to run the combined detection approach.
-- **testbed.py**: Testbed for running various experiments and evaluations.
-
-### Running the Experiment
-
-To replicate the experiments and evaluate the detection methods, use the following command:
-
-```sh
-python src/testbed.py --model_name <target_model_name> --mode <dataset_name>
-```
-
-### Parameters Explained:
-- _model_name:_ The model name or path for loading (default: "huggyllama/llama-7b").
-- _mode:_ The dataset mode, such as 'evaluation' or 'clean' (default: 'evaluation').
 
 ### Huggingface Models:
 
@@ -99,13 +78,6 @@ python src/testbed.py --model_name <target_model_name> --mode <dataset_name>
 - `google/shieldgemma-2b`
 - `deepset/deberta-v3-base-injection`
 
-## 🔐 API Key for OpenAI Models
-
-When using OpenAI models, ensure to add your API key in the `attacks.py` file:
-
-```python
-openai.api_key = "YOUR_API_KEY"
-```
 
 ## 📜 Conclusions
 
