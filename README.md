@@ -3,6 +3,9 @@
 
 Welcome to the official repository for our research on detecting prompt injection attacks on Large Language Models (LLMs). This repository includes the source code, datasets references, and evaluation scripts necessary to replicate the experiments and results discussed in our paper. Our study investigates various detection mechanisms, from simple rule-based approaches to sophisticated model-based detectors, and explores the efficacy of a combined detection strategy.
 
+![1](https://github.com/user-attachments/assets/1a53fe63-74b2-46b4-bb4d-3c23fd90a38f)
+
+
 ## 🧩 Overview
 
 Prompt injection attacks pose a significant threat to the integrity of LLMs by attempting to manipulate the model's behavior through crafted inputs. This repository provides a comprehensive framework for evaluating the effectiveness of different detection methods in identifying such attacks. Our approach integrates multiple detection strategies, including rule-based, keyword matching, perplexity-based, and model-based detectors, to achieve robust and reliable results.
@@ -57,12 +60,14 @@ clean_dataset = load_dataset("nm-testing/qa-chat-prompts", split="train_sft[:100
 ### Visual Analysis
 
 #### Mean Scores of Detectors
-![Mean Scores of Detectors](https://github.com/user-attachments/assets/1.png)
+![1](https://github.com/user-attachments/assets/de31f7b8-04c1-4669-a365-b11c4550f97a)
+
 
 The bar chart above clearly illustrates the superior performance of the perplexity-based and DeBERTa-based detectors compared to the rule-based and keyword matching methods. The combined detector's performance further emphasizes the effectiveness of integrating multiple detection strategies.
 
 #### Accuracy with Number of Samples Tested
-![Accuracy with Number of Samples Tested](https://github.com/user-attachments/assets/2.png)
+![2](https://github.com/user-attachments/assets/d3ce177e-22f4-41eb-831e-775ad8799552)
+
 
 The line chart shows that the combined detector maintains consistently high accuracy across all samples, confirming its robustness. Advanced methods like Perplexity-Based and DeBERTa detectors stabilize at high accuracy levels early on, whereas simpler methods plateau at much lower accuracy levels.
 
