@@ -4,7 +4,8 @@
 Welcome to the official repository for our research on detecting prompt injection attacks on Large Language Models (LLMs). This repository includes the source code, datasets references, and evaluation scripts necessary to replicate the experiments and results discussed in our paper. Our study investigates various detection mechanisms, from simple rule-based approaches to sophisticated model-based detectors, and explores the efficacy of a combined detection strategy.
 
 
-![detector](https://github.com/user-attachments/assets/c2df3bce-7bee-43ad-a508-d6642cc921b3)
+![detector_without_background](https://github.com/user-attachments/assets/803e7e79-418d-47e2-94fd-ba8a5fbdda1d)
+
 
 
 
