@@ -39,7 +39,7 @@ clean_dataset = load_dataset("nm-testing/qa-chat-prompts", split="train_sft[:100
 ## 🔍 Detection Methods
 
 ### 1. Rule-Based Detectors
-- **Rule-Based Detector**: Identifies prompts containing specific suspicious patterns.
+- **Sentence Filter Based Detector**: Identifies prompts containing specific suspicious patterns.
 - **Keyword Matching Detector**: Flags prompts with keywords commonly associated with malicious activities.
 
 ### 2. Perplexity-Based Detector
